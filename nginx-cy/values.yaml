@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: nginx
+  tag: alpine
+
+
+serviceAccount:
+  create: true      
+  name: sa
+
+
+service:
+  type: ClusterIP
+  port: 80
+ 
